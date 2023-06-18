@@ -1,7 +1,9 @@
+<style>
       html,
       body {
-        background-color: #f2f2f2;
+        background-color: #ececec;
         font-family: Saira !important;
+        font-size:14px;
       }
 
       .top-button {
@@ -34,12 +36,13 @@
       #Onejobs {
         width: 96%;
         overflow: hidden;
+        font-size:14px;
         min-height: 160px;
         background-color: #fff;
         padding: 16px 16px 16px;
         border: 1px solid #d9d9d9;
         border-radius: 6px;
-        margin: 6px 0px 6px 0px;
+        margin: 6px 0px 16px 0px;
       }
 
       #Onejobs:hover {
@@ -63,9 +66,10 @@
       }
 
       #DescriptionCSS {
-        width: 60%;
-        float: left
+        width: 80%;margin-bottom:10px;color:#595959;
       }
+
+      #nameaccountcss{padding:10px 0px 0px 0px;text-align:right;height:40px;float:left;width:74%}
 
       @media screen and (max-width: 890px) {
 
@@ -91,22 +95,24 @@
         }
 
         #DescriptionCSS {
-          width: 160px;
-          float: left
+          width: 80%;margin-bottom:10px
         }
+        #nameaccountcss{width:64%;display:none}
+        #Viewaccount{width:50%!important}
       }
 
       #myPopup {
         display: none;
         position: fixed;
-        z-index: 1;
+        z-index: 9999;
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         overflow: auto;
         padding-top: 40px;
         background-color: rgba(0, 0, 0, 0.5);
+        overflow-y: auto;
       }
 
       #myPopup p {
@@ -143,7 +149,7 @@
 
       /* Thanh trượt */
       ::-webkit-scrollbar {
-        width: 10px;
+        width: 4px;
       }
 
       ::-webkit-scrollbar-track {
@@ -175,3 +181,4 @@
       input {
         font-family: Saira !important;
       }
+</style>
