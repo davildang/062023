@@ -144,7 +144,7 @@
       .Result-CSS{margin-left:62px}
 
       #myPopup { //Dành cho mấy Brief, KQ
-        display: none!important;
+        display: none;
         position: fixed;
         z-index: 9999;
         left: 0;
