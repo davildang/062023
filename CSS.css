@@ -1,19 +1,33 @@
 <style>
       html,
       body {
-        background-color: #ececec;
         font-family: Saira !important;
         font-size:14px;
+        background-color: #fcf9ff;
+        margin:0px;
       }
 
       .top-button {
         cursor: pointer;
         font-family: Saira;
-        border-radius: 2px;
+        border-radius: 18px;
         border: 0px solid #cccccc;
         width: auto;
         background-color: #b3e6ff;
-        margin: 0px 10px 6px 0px;
+        margin: 0px 6px 7px 0px;
+        padding: 3px 13px 3px 13px;
+        font-size: 14px;
+        touch-action: manipulation;
+        box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+      }
+
+      .top-button-filter {
+        cursor: pointer;
+        font-family: Saira;
+        border-radius: 2px;
+        border: 1px solid #cccccc;
+        width: auto;
+        margin: 0px 10px 7px 0px;
         padding: 3px 13px 3px 13px;
         font-size: 14px;
       }
@@ -33,6 +47,25 @@
         background-color: #e6e6e6;
       }
 
+      #printhere{min-height:700px}
+
+      #Header{
+        width:100%;background-color: #fcf9ff; border-bottom:1px solid #cdcdcd;margin-bottom:10px;position: fixed;z-index: 9999;left: 0;top: 0;
+      }
+
+      #Header_avatar{width:10%;height:40px;float: right;}
+
+      #Thantrang{
+        margin-top: 70px;width:100%;
+      }
+
+      @media screen and (max-width: 600px) {
+      #Thantrang{margin-top:110px;}
+      #viewpage{padding-left:1px}
+      #Header{padding-left:6px}
+      #Header_avatar{width:12%;}
+      }
+
       #Onejobs {
         width: 96%;
         overflow: hidden;
@@ -41,17 +74,21 @@
         background-color: #fff;
         padding: 16px 16px 16px;
         border: 1px solid #d9d9d9;
-        border-radius: 6px;
-        margin: 6px 0px 16px 0px;
+        border-bottom: none;
+        border-top-left-radius:6px;
+        border-top-right-radius:6px;
+        margin: 6px 0px 0px 0px;
       }
 
       #Onejobs:hover {
-        background-color: #fbfbfd;
+        background-color: #FDFDFD;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
       }
 
       #Onejobs-left {
         float: left;
-        width: 46%;
+        width: 48%;
         border: 0px solid #cdcdcd
       }
 
@@ -62,46 +99,63 @@
         background-color: #fff;
         border-radius: 6px;
         padding: 14px;
-        border: 1px solid #cdcdcd
+        border: 0px solid #cdcdcd;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
       }
 
-      #DescriptionCSS {
-        width: 80%;margin-bottom:10px;color:#595959;
+      #Onejobbottom{width: 96%;margin-bottom:20px;border: 1px solid #d9d9d9;padding:6px 16px 16px 16px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;overflow:auto;height:auto;background-color:#fff;
+      //box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 1px, rgba(0, 0, 0, 0.24) 0px 1px 1px;
       }
+
+      .One_bottomchild1{cursor: pointer;margin-left: 19px;border:0px solid #cdcdcd;width:40%;height:30px;float:left}
+      .One_bottomchild2{cursor: pointer;border:0px solid #cdcdcd;width:50%;height:30px;float:right}
+
+      .Cmtdad{width:100%;padding:2% 0% 2% 0%;border-bottom:1px solid #e6e6e6}
+      .Cmtchild1{display: inline-block;border-right:1px solid #cdcdcd; padding-left:6%;vertical-align: middle;width:16%;}
+      .Cmtchild2{display: inline-block; vertical-align: middle;width:50%;padding-left:20px;}
+      .Inputnewcmt{float:left;display: inline-block;border-right:1px solid #cdcdcd;padding-left:6%;vertical-align: middle;width:66%;}
+      .Sendcmt{font-size:16px;padding-top: 3px;cursor: pointer;display: inline-block; vertical-align: middle;width:20%;float:right;padding-left:20px;}
+      .
+       .Cmtdad:hover {
+        background-color: #fbfbfd;
+       }
+
+      #DescriptionCSS {
+        width: 85%;font-size:16px;margin:10px 0px 20px 0px;color:#383838;white-space: pre-line; }
+
+      
 
       #nameaccountcss{padding:10px 0px 0px 0px;text-align:right;height:40px;float:left;width:74%}
 
-      @media screen and (max-width: 890px) {
+      /*Edit & Newjobs */
+      .Descrip-duanCSS{margin-left:106px}
+      .Format-duanCSS{margin-left:77px}
+      .Loai-duanCSS{margin-left:106px}
+      .Chiendich-duanCSS{margin-left:78px}
+      .Status-duanCSS{margin-left:78px}
+      .Open-duanCSS{margin-left:53px}
 
-        /*Khi màn hình < 900px */
-        #Onejobs-left {
-          min-height: 140px;
-          width: 96%;
-          border: 0px solid #cdcdcd;
-        }
+      .Jobs-CSS{margin-left:48px}
+      .Nhanvien-CSS{margin-left:44px}
+      .Start-CSS{margin-left:60px}
+      .Deadline-CSS{margin-left:54px}
+      .Status-CSS{margin-left:45px}
+      .Brief-CSS{margin-left:18px}
+      .Result-CSS{margin-left:62px}
 
-        #Onejobs-right {
-          min-height: 140px;
-          width: 94%;
-          margin-top: 10px;
-          border-radius: 6px;
-          padding: 3%;
-          border: 1px solid #cdcdcd;
-        }
-
-        #Onejobs {
-          padding: 4% 4% 4%;
-          width: 92%;
-        }
-
-        #DescriptionCSS {
-          width: 80%;margin-bottom:10px
-        }
-        #nameaccountcss{width:64%;display:none}
-        #Viewaccount{width:50%!important}
+      #myPopup { //Dành cho mấy Brief, KQ
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        padding-top: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
       }
 
-      #myPopup {
+      #myPopupMax { 
         display: none;
         position: fixed;
         z-index: 9999;
@@ -110,13 +164,27 @@
         width: 100%;
         height: 100vh;
         overflow: auto;
-        padding-top: 40px;
+        padding-top: 20px;
         background-color: rgba(0, 0, 0, 0.5);
-        overflow-y: auto;
+        overflow-y: auto; 
       }
 
       #myPopup p {
         //color: white;
+      }
+
+      #myMiniPopup { 
+        display: none;
+        position: fixed;
+        z-index: 10000;
+        left: 16px;
+        bottom: 30px;
+        border-radius:6px;
+      }
+
+      #printMiniPopup{
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      border-radius:6px;
       }
 
       .close {
@@ -147,30 +215,61 @@
         filter: brightness(1.05);
       }
 
+      //Menu chính
+      #Dropdown {width:100%;height:40px;margin-top:0px;}
+      #Dropdown_child1 {float:left;width:86%;overflow-x:auto;white-space:nowrap;}
+      #Dropdown_child1s {float:left;width:86%;overflow-x:auto;}
+      #Dropdown_child2 {display:none;float:right;padding-left:10px;width:10%;cursor: pointer;transform: rotate(0)}
+
+      @media screen and (max-width: 890px) {
+
+        #Dropdown_child2{display:block}
+
+        /*Khi màn hình < 900px */
+        #Onejobs-left {
+          min-height: 140px;
+          width: 96%;
+          border: 0px solid #cdcdcd;
+        }
+
+        #Onejobs-right {
+          min-height: 140px;
+          width: 94%;
+          margin-top: 10px;
+          border-radius: 6px;
+          padding: 3%;
+          border: 1px solid #cdcdcd;
+        }
+
+        #Onejobs {
+          padding: 3% 3% 3%;
+          width: 94%;
+        }
+
+        #Onejobbottom{
+          width:92%;
+          padding:6px 4% 2% 4%;
+        }
+
+        .One_bottomchild1{width:40%}
+        .One_bottomchild2{width:30%}
+        .Cmtchild1{width:28%}
+        .Cmtchild2{}
+        
+
+        #DescriptionCSS {
+          width: 100%;margin-bottom:20px;border-radius:4px;min-height:30px;
+        }
+        #nameaccountcss{width:64%;display:none}
+        #Viewaccount{width:50%!important}
+      }
+
+      .TitleNewnofi{margin:10px 0px 5px 0px}
+      .Newnofiarea{width:40%}
+
       /* Thanh trượt */
       ::-webkit-scrollbar {
-        width: 4px;
-      }
-
-      ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px #f2f2f2;
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
-      }
-
-      ::-webkit-scrollbar:horizontal {
-        display: none
-      }
-
-      ::-webkit-scrollbar-thumb {
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
-        background: #cd;
-        -webkit-box-shadow: inset 0 0 6px #66b3ff;
-      }
-
-      ::-webkit-scrollbar-thumb:window-inactive {
-        background: #66b3ff;
+        width: 0px;
       }
 
 
@@ -181,4 +280,44 @@
       input {
         font-family: Saira !important;
       }
+
+      textarea {
+        font-family: Saira !important;
+      }
+
+      .Avatarnomal{border-radius:6px;border:0px solid #cdcdcd;width:20%;max-width:80px;float:left;cursor: pointer;padding:10px;text-align:center;margin-right:10px}
+
+      .fade-in-up {
+        animation: fade-in-up 0.5s ease-in-out forwards;
+      }
+
+      @keyframes fade-in-up {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      }
+
+      .fade-out-down {
+      animation: fade-out-down 0.5s ease-in-out forwards;
+      }
+
+      @keyframes fade-out-down {
+      0% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      }
+
+      img:hover{opacity: 0.8;}
+
+
 </style>
