@@ -121,7 +121,7 @@
        }
 
       #DescriptionCSS {
-        width: 85%;font-size:16px;margin:10px 0px 20px 0px;color:#383838;white-space: pre-line; height: 3em; overflow: hidden; }
+        width: 85%;font-size:16px;margin:10px 0px 20px 0px;color:#383838;white-space: pre-line; height: 3em; overflow: hidden;text-overflow: ellipsis; }
 
       
 
@@ -258,7 +258,7 @@
         
 
         #DescriptionCSS {
-          width: 100%;margin-bottom:20px;border-radius:4px;min-height:30px; height: 3em; overflow: hidden;
+          width: 100%;margin-bottom:20px;border-radius:4px;min-height:30px; height: 3em; overflow: hidden; text-overflow: ellipsis;
         }
         #nameaccountcss{width:64%;display:none}
         #Viewaccount{width:50%!important}
