@@ -204,11 +204,15 @@
         display: inline;
         margin-right: 3px;
         font-size: 13px;
-        background-color: #e6e6e6;
+        background-color: #def3fe;
         border-radius: 2px;
         height: 22px;
         padding-left: 13px;
         padding-right: 13px
+      }
+
+      .infomaionBox{
+      display: inline;margin-right: 4px;font-size: 13px;border: 0px solid #cdcdcd;border-radius: 2px;height: 22px;padding-left: 13px;padding-right: 13px;background-color: #def3fe;
       }
 
       #Status:hover {
