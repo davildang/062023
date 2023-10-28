@@ -7,6 +7,11 @@
         margin:0px;
       }
 
+      div {
+    -webkit-tap-highlight-color: transparent; /* Cho trình duyệt Safari */
+    tap-highlight-color: transparent; /* Cho trình duyệt Android */
+      }
+
       .top-button {
         cursor: pointer;
         font-family: Saira;
