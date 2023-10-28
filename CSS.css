@@ -107,8 +107,8 @@
       //box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 1px, rgba(0, 0, 0, 0.24) 0px 1px 1px;
       }
 
-      .One_bottomchild1{cursor: pointer;margin-left: 19px;border:0px solid #cdcdcd;width:40%;height:30px;float:left}
-      .One_bottomchild2{cursor: pointer;border:0px solid #cdcdcd;width:50%;height:30px;float:right}
+      .One_bottomchild1{cursor: pointer;margin-left: 19px;border:0px solid #cdcdcd;width:30%;height:30px;float:left}
+      .One_bottomchild2{cursor: pointer;border:0px solid #cdcdcd;width:60%;height:30px;float:right}
 
       .Cmtdad{width:100%;padding:2% 0% 2% 0%;border-bottom:1px solid #e6e6e6}
       .Cmtchild1{display: inline-block;border-right:1px solid #cdcdcd; padding-left:6%;vertical-align: middle;width:16%;}
