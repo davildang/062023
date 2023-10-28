@@ -50,7 +50,7 @@
       #printhere{min-height:700px}
 
       #Header{
-        width:100%;background-color: #fcf9ff; border-bottom:1px solid #cdcdcd;margin-bottom:10px;position: fixed;z-index: 9999;left: 0;top: 0;
+        width:100%;background-color: #fcf9ffe8; border-bottom:1px solid #cdcdcd;margin-bottom:10px;position: fixed;z-index: 9999;left: 0;top: 0;
       }
 
       #Header_avatar{width:10%;height:40px;float: right;}
