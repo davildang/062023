@@ -199,6 +199,7 @@
         font-weight: bold;
         cursor: pointer;
         margin: 4px 10px 0px 0px;
+        width:60px;
       }
 
       .close:hover {
