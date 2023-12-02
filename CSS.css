@@ -84,7 +84,7 @@ html,
 #thantrai{position: fixed;padding:80px 10px 10px 10px;float:left;width:18%;height:100vh;border-right:1px solid #cdcdcd}
 
       @media screen and (max-width: 600px) {
-      #Thantrang{margin-top:110px;}
+      #Thantrang{margin-top:110px!Important;}
       #viewpage{padding-left:1px}
       #Header{padding-left:6px}
       #Header_avatar{width:12%;}
