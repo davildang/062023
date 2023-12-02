@@ -75,7 +75,7 @@ html,
 
 #Headermain{width:98%;margin:auto;border:0px solid #cdcdcd;border-radius:6px;padding:8px 10px 0px 3px;}
      
-#Header_avatar{width:10%;height:40px;float: right;}
+#Header_avatar{height:40px;float: right;}
 
       #Thantrang{
         margin-top: 70px;width: 100%;float:none;margin-left:0
@@ -359,5 +359,6 @@ html,
   #thantrai{display:none}
   #Dropdown {width:100%;height:40px;margin-top:0px;}
   #Dropdown_child1 {float:left;width:86%;overflow-x:auto;white-space:nowrap;}
+  #Header_avatar{width:10%;height:40px;float: right;}
 }
 </style>
