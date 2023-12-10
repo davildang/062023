@@ -361,4 +361,61 @@ html,
   #Dropdown_child1 {float:left;width:86%;overflow-x:auto;white-space:nowrap;}
   #Header_avatar{width:10%;height:40px;float: right;}
 }
+
+/* CSS Loading */
+.lds-ellipsis {
+  display: none;
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 0px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #404040;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
 </style>
